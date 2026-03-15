@@ -28,7 +28,7 @@ class Cat extends Animal {
     }
 }
 
-public class DataAbstraction {
+public class Abstraction {
     public static void main(String[] args) {
         // Animal cat = new Animal(); ERROR: cannot create a object of abstract class
 
