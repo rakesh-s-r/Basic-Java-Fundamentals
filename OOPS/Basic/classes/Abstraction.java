@@ -1,4 +1,4 @@
-package OOPS.Basic;
+package OOPS.Basic.classes;
 
 abstract class Animal {
     String name;

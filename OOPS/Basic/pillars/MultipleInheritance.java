@@ -1,4 +1,4 @@
-package OOPS.Basic;
+package OOPS.Basic.pillars;
 
 interface MammalsI {
     void sleep();

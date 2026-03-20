@@ -1,4 +1,4 @@
-package OOPS.Basic;
+package OOPS.Basic.pillars;
 
 class CarWithPrice {
     private double discount = 0.5;

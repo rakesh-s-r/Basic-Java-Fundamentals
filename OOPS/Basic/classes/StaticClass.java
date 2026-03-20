@@ -1,4 +1,4 @@
-package OOPS.Basic;
+package OOPS.Basic.classes;
 
 // Static method cannot be overridden (from parent child relation)
 // Static method can call from only static class

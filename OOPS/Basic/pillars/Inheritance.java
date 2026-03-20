@@ -1,4 +1,4 @@
-package OOPS.Basic;
+package OOPS.Basic.pillars;
 
 class Mammals {
     void sleep() {
