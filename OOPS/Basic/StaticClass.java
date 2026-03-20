@@ -1,7 +1,10 @@
 package OOPS.Basic;
 
+// Static method cannot be overridden (from parent child relation)
+// Static method can call from only static class
+
 class StaticExample {
-    static String color = "Red";
+    static final String color = "Red"; // constant declare using static final
 
     public void log() {
         System.out.println("Printing logs...");
