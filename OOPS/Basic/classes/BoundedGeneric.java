@@ -17,8 +17,8 @@ public class BoundedGeneric<T extends Number> {
         obj.setValue(10);
         System.out.println(obj.getValue());
 
-        BoundedGeneric<String> obj2 = new BoundedGeneric<>();
-        obj2.setValue("Shark");
-        System.out.println(obj2.getValue());
+        // BoundedGeneric<String> obj2 = new BoundedGeneric<>();
+        // obj2.setValue("Shark");
+        // System.out.println(obj2.getValue());
     }
 }

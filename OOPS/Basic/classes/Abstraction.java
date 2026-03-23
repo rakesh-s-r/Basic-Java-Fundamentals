@@ -1,5 +1,7 @@
 package OOPS.Basic.classes;
 
+// even though if we did not specify abstract in-front 
+// of method it will be added by default just like public
 abstract class Animal {
     String name;
 
@@ -19,6 +21,7 @@ class Cat extends Animal {
         super(name);
     }
 
+    @Override
     void makeSound() {
         System.out.println("Cat is making sound....");
     }
