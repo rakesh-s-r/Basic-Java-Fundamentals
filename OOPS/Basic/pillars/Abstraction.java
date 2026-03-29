@@ -1,4 +1,4 @@
-package OOPS.Basic.classes;
+package OOPS.Basic.pillars;
 
 // even though if we did not specify abstract in-front 
 // of method it will be added by default just like public
