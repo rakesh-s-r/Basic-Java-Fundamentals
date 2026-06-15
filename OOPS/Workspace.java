@@ -15,7 +15,7 @@ class Child extends Parent {
 
 public class Workspace {
     public static void main(String[] args) {
-        Parent obj = new Child();
+        Child obj = new Child();
         obj.display(); // Prints "Static method in Parent" because obj is a Parent reference
     }
 }
