@@ -1,6 +1,7 @@
 package OOPS.Advanced;
 
 import java.util.*;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -121,5 +122,28 @@ public class StreamExample {
                 .skip(2)
                 .collect(Collectors.toList());
         emp_l2.forEach(x -> System.out.println("Item is " + x.getAge()));
+
+        // Flat map
+        System.out.println("--------------------------------------");
+        List<List<String>> twoD = new ArrayList<>(Arrays.asList(List.of("Pune", "Banglore")));
+        List<String> city_list = twoD.stream().flatMap(e -> e.stream()).collect(Collectors.toList());
+        System.out.println(city_list);
+
+        // Distinct
+        System.out.println(Stream.of(1, 1, 2, 3, 3, 4, 5, 4).peek(i -> System.out.println("Original: " + i)).distinct()
+                .collect(Collectors.toList()));
+
+        // Reduce
+        Optional<Integer> red = Arrays.asList(1, 2, 3).stream().reduce((x, y) -> x * y);
+        System.out.println("Reduce operation is " + red);
+
+        // allMatch == every in js
+        System.out.println("All match " + Arrays.asList(1, 2, 3).stream().allMatch(i -> i > 0));
+
+        // anyMatch == some in js
+        System.out.println("Any match " + Arrays.asList(0, 2, 3).stream().anyMatch(i -> i > 0));
+
+        // anyMatch == !allMatch
+        System.out.println("None match " + Arrays.asList(-1, -2, -3).stream().noneMatch(i -> i > 0));
     }
 }
